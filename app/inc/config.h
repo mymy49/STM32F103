@@ -100,7 +100,7 @@
 #define TIM3_ENABLE			false
 #define TIM4_ENABLE			false
 #define TIM5_ENABLE			false
-#define TIM6_ENABLE			true
+#define TIM6_ENABLE			false
 #define TIM7_ENABLE			false
 #define TIM8_ENABLE			false
 
