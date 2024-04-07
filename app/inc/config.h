@@ -23,13 +23,16 @@
 //
 ////////////////////////////////////////////////////////////////////////////////////////
 
+// STM32F446xx 계열에서 유효한 설정이 담긴 참고용 파일이다.
+// 해당 파일을 사용자 프로젝트의 include 경로에 복사하고 config.h로 변경한다.
+
 #ifndef YSS_CONFIG__H_
 #define YSS_CONFIG__H_
 
 // ####################### 외부 크리스탈 클럭 주파수 설정 #######################
 // 아래 HSE_CLOCK_FREQ가 정의 되어 있으면 HSE 클럭을 소스로 PLL 설정이 이뤄집니다.
 // 정의되어 있지 않으면 HSI 클럭을 소스로 PLL 설정이 이뤄집니다.
-//#define HSE_CLOCK_FREQ 8000000
+#define HSE_CLOCK_FREQ 8000000
 
 // ####################### 스케줄러 설정 #######################
 // runtime 함수를 지원할 PWM 장치 설정 (RUNTIME_TIM2 ~ RUNTIME_TIM14)
@@ -107,8 +110,8 @@
 // UART 활성화
 #define USART1_ENABLE		false
 #define USART2_ENABLE		false
-#define USART3_ENABLE		false
-#define UART4_ENABLE		false
+#define USART3_ENABLE		true
+#define UART4_ENABLE		true
 #define UART5_ENABLE		false
 
 #endif
