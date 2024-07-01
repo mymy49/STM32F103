@@ -43,5 +43,15 @@ void initializeBoard(void)
 	uart4.enableClock();
 	uart4.initialize(115200, 128);
 	uart4.enableInterrupt();
+
+	// ADC 초기화
+	using namespace define::adc;
+
+	gpioA.setAsAnalog(3);
+
+	adc1.enableClock();
+	adc1.initialize();
+	adc1.add(3, lpfLv::LV12, bit::BIT16);
+	adc1.enableInterrupt();
 }
 

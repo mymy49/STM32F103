@@ -23,6 +23,7 @@
 
 #include <yss.h>
 #include <bsp.h>
+#include <yss/debug.h>
 
 int main(void)
 {
@@ -34,6 +35,7 @@ int main(void)
 
 	while(1)
 	{
+		debug_printf("%d\r", adc1.get(3));
 		thread::yield();
 	}
 }
