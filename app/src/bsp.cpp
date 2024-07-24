@@ -21,9 +21,9 @@ void initializeBoard(void)
 	Led::initialize();
 
 	// SPI2 초기화
-	gpioB.setAsAltFunc(13, altfunc::PB13_SPI2_SCK, ospeed::FAST);
-	gpioB.setAsAltFunc(14, altfunc::PB14_SPI2_MISO, ospeed::FAST);
-	gpioB.setAsAltFunc(15, altfunc::PB15_SPI2_MOSI, ospeed::FAST);
+	gpioB.setAsAltFunc(13, Gpio::PB13_SPI2_SCK, Gpio::OSPEED_FAST);
+	gpioB.setAsAltFunc(14, Gpio::PB14_SPI2_MISO, Gpio::OSPEED_FAST);
+	gpioB.setAsAltFunc(15, Gpio::PB15_SPI2_MOSI, Gpio::OSPEED_FAST);
 
 	spi2.enableClock();
 	spi2.initializeAsMain();

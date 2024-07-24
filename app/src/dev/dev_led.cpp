@@ -5,11 +5,9 @@ namespace Led
 {
 	void initialize(void)
 	{
-		using namespace define::gpio;
-
-		gpioC.setAsAltFunc(6, altfunc::PC6_TIM3_CH1);
-		gpioC.setAsAltFunc(8, altfunc::PC8_TIM3_CH3);
-		gpioC.setAsAltFunc(9, altfunc::PC9_TIM3_CH4);
+		gpioC.setAsAltFunc(6, Gpio::PC6_TIM3_CH1);
+		gpioC.setAsAltFunc(8, Gpio::PC8_TIM3_CH3);
+		gpioC.setAsAltFunc(9, Gpio::PC9_TIM3_CH4);
 
 		pwm3Ch1.enableClock();
 		pwm3Ch1.initialize(10000);
