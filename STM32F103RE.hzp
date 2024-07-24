@@ -1,5 +1,6 @@
 <!DOCTYPE CrossStudio_Project_File>
 <solution Name="Solution 'STM32F103RE'" target="8" version="2">
+  <configuration Name="Common" gcc_enable_all_warnings="Yes" />
   <configuration
     Name="Debug"
     c_preprocessor_definitions="DEBUG"
