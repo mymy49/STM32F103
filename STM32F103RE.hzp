@@ -1,5 +1,5 @@
 <!DOCTYPE CrossStudio_Project_File>
-<solution Name="Solution 'STM32F103C8'" target="8" version="2">
+<solution Name="Solution 'STM32F103RE'" target="8" version="2">
   <configuration Name="Common" gcc_enable_all_warnings="Yes" />
   <configuration
     Name="Debug"
@@ -26,12 +26,12 @@
   <configuration
     Name="THUMB Release"
     inherited_configurations="THUMB;Release" />
-  <project Name="STM32F103C8">
+  <project Name="STM32F103RE">
     <configuration
       CMSIS_CORE="Yes"
       Name="Common"
       Placement="Flash"
-      Target="STM32F103C8"
+      Target="STM32F103RE"
       arm_architecture="v7M"
       arm_core_type="Cortex-M3"
       arm_fp_abi="Soft"
@@ -42,19 +42,19 @@
       arm_linker_process_stack_size="1024"
       arm_linker_stack_size="512"
       arm_simulator_memory_simulation_filename="$(TargetsDir)/STM32/STM32SimulatorMemory$(HostDLL)"
-      arm_simulator_memory_simulation_parameter="STM32F103C8;0x10000;0x5000"
+      arm_simulator_memory_simulation_parameter="STM32F103RE;0x80000;0x10000"
       arm_target_loader_applicable_loaders="Flash"
       arm_target_loader_default_loader="Flash"
       arm_target_trace_interface_type="None"
       c_user_include_directories="$(ProjectDir)/yss/inc;$(ProjectDir)/app/inc"
       debug_register_definition_file="$(TargetsDir)/STM32/STM32F103_Peripherals.xml"
       gcc_cplusplus_language_standard="gnu++11"
-      linker_memory_map_file="$(TargetsDir)/STM32/STM32F103C8_MemoryMap.xml"
+      linker_memory_map_file="$(TargetsDir)/STM32/STM32F103RE_MemoryMap.xml"
       linker_printf_fmt_level="int"
       linker_printf_fp_enabled="Float"
       linker_scanf_fmt_level="int"
       linker_section_placement_file="$(StudioDir)/targets/Cortex_M/flash_placement.xml"
-      macros="DeviceVectorsFile=STM32F103xB.vec"
+      macros="DeviceVectorsFile=STM32F103xE.vec"
       project_directory=""
       project_type="Executable"
       property_groups_file_path="$(TargetsDir)/STM32/propertyGroups.xml"
